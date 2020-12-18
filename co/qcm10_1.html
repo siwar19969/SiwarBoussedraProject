@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+  <title>Solution d'exercice</title>
+  <meta charset="UTF-8">
+  <meta name="generator" content="SCENARI 4.2.106 / Opale 3.7.000">
+  <meta name="revision" content="2020-12-17 23:32">
+  <link rel="start" href="module_Covid.html" title="Cours Covid-19">
+  <meta name="author" content>
+  <meta name="date" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scImgMgr/scImgMgr.css">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {id:"kithaaw1"};
+/*1*/ window.scLoadParams = {destUri:"/co/qcm10_1.html", pathToRoot:"../"};
+</script>
+  <script type="text/JavaScript" src="../lib-sc/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_assmnt.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_mathjax/mathjaxMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scMediaMgr/scMediaMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scImgMgr/scImgMgr.js"></script>
+  <script type="text/JavaScript">
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImgMgr.registerAdaptedImage("ide:content/des:img");
+
+scImgMgr.registerGallery("des:div.galFra");
+
+scImgMgr.registerSvg("des:svg");
+scImgMgr.registerZoom("des:a.svgZoom",{type:"svg",svgMax:1,toolbar:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+  <script type="text/javascript">try{
+	if(window.frameElement.setSubWindowTitle) window.frameElement.setSubWindowTitle(document.title);
+}catch(e){}
+</script>
+ </head>
+ <body class="subWin eval">
+  <div id="root"><header id="header" role="banner"><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden"><section class="hBk article result"><div class="hBk_co "><script type="text/JavaScript">
+var ITXj9uut0QfQo69ZddMI2h_Asol = {
+
+	fId : "ITXj9uut0QfQo69ZddMI2h",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "" : {
+
+	this.refreshResult = function(pDisplay){
+		if(pDisplay) this.fResultDisplay = pDisplay;
+		if(this.fResultDisplay == "none") for(var i=this.fLabels.length -1; i >=0; i--)  scDragMgr.helpers.delClass(this.fLabels[i],"assmntResult_Right","assmntResult_Wrong");
+		else for(var i=this.fLabels.length -1; i >=0; i--) {
+			var vLabel = this.fLabels[i];
+
+			var vOldClass = (vLabel.sO == vLabel.rO && vLabel.sG == vLabel.rG) ? "assmntResult_Wrong" : "assmntResult_Right";
+			var vNewClass = (vLabel.sO == vLabel.rO && vLabel.sG == vLabel.rG) ? "assmntResult_Right" : "assmntResult_Wrong";
+
+			scDragMgr.helpers.switchClass(vLabel, vOldClass, vNewClass);
+		}
+	};
+var vLoadRespSession = "eval";
+
+		for(var i = this.fLabels.length - 1; i >=0; i--) scDragMgr.setDraggable(this.fLabels[i], false);
+		this.load(vLoadRespSession);
+		this.synch();
+	this.fResultDisplay = "addClass";
+
+var vLoadScoreSession = "eval";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+this.fRespSession = null;
+
+		this.computeScore = function() {
+
+		this.refreshScoresFeedbacks();
+		this.refreshResult();
+	}
+
+
+		this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.ITXj9uut0QfQo69ZddMI2h_Asol_form;
+		switch(this.fCurSeq) {
+case "" : {
+		this.refreshResult("none");
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "";
+	},
+
+	saveResp:function(pSession){
+		if(pSession==null) return;
+		var vLabel = this.fLabels[0];
+		var vStr = "[{g:" + vLabel.rG + ",offs:" + vLabel.rO + "," + scDragMgr.saveLabelPos(vLabel) + "}";
+		for(var i=1, len=this.fLabels.length; i < len; i++) {
+			vLabel = this.fLabels[i];
+			vStr += ",{g:" + vLabel.rG + ",offs:" + vLabel.rO + "," + scDragMgr.saveLabelPos(vLabel) + "}";
+		}
+		vStr+="]";
+		scServices.assmntMgr.setResponse(this.fId, pSession, "pos", vStr);
+	},
+	load:function(pSession){
+		var vStr = (pSession!=null) ? scServices.assmntMgr.getResponse(this.fId, pSession, "pos") : null;
+		for(var i=this.fGroupsC.length -1; i >=0; i--) {
+			var vGroup = this.fGroupsC[i];
+			for(var j=vGroup.length-1; j >=0; j--) vGroup[j].labelsToAdd = [];
+		}
+		if(vStr) {
+						var vList = eval(vStr);
+			for(var i=0, len=this.fLabels.length; i < len; i++) {
+				var vLabelToAdd = vList[i];
+				vLabelToAdd.label = this.fLabels[i];
+				var vGroupC = this.fGroupsC[vLabelToAdd.g];
+				if(vGroupC.length == 1) vGroupC[0].labelsToAdd[vLabelToAdd.offs] = vLabelToAdd; 
+				else vGroupC[vLabelToAdd.offs].labelsToAdd.push(vLabelToAdd);
+			}
+		} else {
+						var vBasketC = this.fGroupsC[0];
+
+			for(var i=vBasketC.length-1; i >=0; i--) for(var j=0, vLen=vBasketC[i]._Labels.length; j < vLen; j++) vBasketC[i].labelsToAdd.push({label:vBasketC[i]._Labels[j]});
+
+		}
+		scDragMgr.repopulateContainers("ITXj9uut0QfQo69ZddMI2h_Asol");
+	},
+	synch:function(){
+		for(var i=this.fGroupsC.length -1; i >=0; i--) {
+			var vGroup = this.fGroupsC[i];
+			var vOffset = 0;
+			for(var j=0, vLenJ=vGroup.length; j < vLenJ; j++) {
+				var vItems = scDragMgr.getLabels(vGroup[j]);
+				var vLenK = vItems.length;
+								if(vLenK == 0) vOffset++;
+				else for(var k=0; k < vLenK; k++) {
+					vItems[k].rG = i;
+					vItems[k].rO = vOffset++;
+				}
+			}
+		}
+	},
+	refreshScoresFeedbacks : function(){
+
+		var vScoreNode = sc$("ITXj9uut0QfQo69ZddMI2h_Asol_SN42");
+
+		var vScore = (Math.round((this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * 100) * 1)+ 0;
+if(vScore > 99 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Bonne réponse<\/span>";
+			vScoreNode.className = "answBest";
+		} else if(vScore > 49 && vScore <= 99 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answGood";
+		} else if(vScore > 0 && vScore <= 49 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answBad";
+		} else if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Mauvaise réponse <\/span>";
+			vScoreNode.className = "answWorst";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	onLoad: function(){
+	try{
+		var onChange = function() {
+ITXj9uut0QfQo69ZddMI2h_Asol.synch();
+ITXj9uut0QfQo69ZddMI2h_Asol.computeScore();
+ITXj9uut0QfQo69ZddMI2h_Asol.saveResp(ITXj9uut0QfQo69ZddMI2h_Asol.fRespSession);
+			scServices.assmntMgr.commit();
+		}
+		this.fLabels = [];
+		var vLabel, vC;
+scDragMgr.makeContainer("ITXj9uut0QfQo69ZddMI2h_Asol", sc$("ITXj9uut0QfQo69ZddMI2h_Asol_S_N5c"), vC = sc$("ITXj9uut0QfQo69ZddMI2h_Asol_S_N5e"), sc$("ITXj9uut0QfQo69ZddMI2h_Asol_S_N69")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddBasketDragOver');
+vLabel = sc$("ITXj9uut0QfQo69ZddMI2h_Asol_LN18");
+	this.fLabels.push(vLabel);
+	vLabel.sO=0;
+vLabel.sG=1;
+scDragMgr.makeDraggableLabel("ITXj9uut0QfQo69ZddMI2h_Asol", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, 'ddLabelDrag');
+vLabel = sc$("ITXj9uut0QfQo69ZddMI2h_Asol_LN21");
+	this.fLabels.push(vLabel);
+	vLabel.sO=1;
+vLabel.sG=1;
+scDragMgr.makeDraggableLabel("ITXj9uut0QfQo69ZddMI2h_Asol", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, 'ddLabelDrag');
+vLabel = sc$("ITXj9uut0QfQo69ZddMI2h_Asol_LN2a");
+	this.fLabels.push(vLabel);
+	vLabel.sO=2;
+vLabel.sG=1;
+scDragMgr.makeDraggableLabel("ITXj9uut0QfQo69ZddMI2h_Asol", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, 'ddLabelDrag');
+vLabel = sc$("ITXj9uut0QfQo69ZddMI2h_Asol_LN33");
+	this.fLabels.push(vLabel);
+	vLabel.sO=3;
+vLabel.sG=1;
+scDragMgr.makeDraggableLabel("ITXj9uut0QfQo69ZddMI2h_Asol", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, 'ddLabelDrag');
+vLabel = sc$("ITXj9uut0QfQo69ZddMI2h_Asol_LN3c");
+	this.fLabels.push(vLabel);
+	vLabel.sO=4;
+vLabel.sG=1;
+scDragMgr.makeDraggableLabel("ITXj9uut0QfQo69ZddMI2h_Asol", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, 'ddLabelDrag');
+scDragMgr.makeContainer("ITXj9uut0QfQo69ZddMI2h_Asol", sc$("ITXj9uut0QfQo69ZddMI2h_Asol_S_N7e"), vC = sc$("ITXj9uut0QfQo69ZddMI2h_Asol_S_N80"), sc$("ITXj9uut0QfQo69ZddMI2h_Asol_S_N82")).setMode(vC, 'ordered', -1).setDragOverClass(vC, 'ddCatchDragOver');
+this.fGroupsC = [scDragMgr.getContainers("ITXj9uut0QfQo69ZddMI2h_Asol", sc$("ITXj9uut0QfQo69ZddMI2h_Asol_L")), scDragMgr.getContainers("ITXj9uut0QfQo69ZddMI2h_Asol", sc$("ITXj9uut0QfQo69ZddMI2h_Asol_R"))];
+		for(var i = this.fGroupsC[0].length-1; i >=0; i--) this.fGroupsC[0][i]._Labels = scDragMgr.getLabels(this.fGroupsC[0][i]);
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("ITXj9uut0QfQo69ZddMI2h_Asol_A");
+		vNodeRoot.style.display = "block"; 
+	}catch(e){console.log(e);}
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = ITXj9uut0QfQo69ZddMI2h_Asol;
+scOnUnloads[scOnUnloads.length] = ITXj9uut0QfQo69ZddMI2h_Asol;
+</script><div id="ITXj9uut0QfQo69ZddMI2h_Asol_A" style="display:none;"><div class="solBody"><div class="question"><h3 class="question_ti"><span>&Eacute;nonc&eacute;</span></h3><div class="rBk "><p>Remets les mots en ordre</p></div></div><div class="score"><h3 class="score_ti"><span>R&eacute;sultat</span></h3><div class="scoreEval " aria-live="polite"><div id="ITXj9uut0QfQo69ZddMI2h_Asol_SN42"><span></span></div></div></div><div class="sol"><h3 class="sol_ti"><span>Correction</span></h3><div id="ITXj9uut0QfQo69ZddMI2h_Asol_L" class="ddBasketSol "><div id="ITXj9uut0QfQo69ZddMI2h_Asol_S_N5c" class="ddBasketCatch "><div id="ITXj9uut0QfQo69ZddMI2h_Asol_S_N5e" class="ddBasketCont "><div id="ITXj9uut0QfQo69ZddMI2h_Asol_LN3c" class="ddLabel "><p>et s&egrave;che fatigue</p></div><div id="ITXj9uut0QfQo69ZddMI2h_Asol_LN21" class="ddLabel "><p>de Covid-19</p></div><div id="ITXj9uut0QfQo69ZddMI2h_Asol_LN33" class="ddLabel "><p>fi&egrave;vre toux</p></div><div id="ITXj9uut0QfQo69ZddMI2h_Asol_LN18" class="ddLabel "><p>les Sympt&ocirc;mes</p></div><div id="ITXj9uut0QfQo69ZddMI2h_Asol_LN2a" class="ddLabel "><p>les plus fr&eacute;quents</p></div></div><div id="ITXj9uut0QfQo69ZddMI2h_Asol_S_N69" class="ddBasketIfEmpty "><span>Plus d'&eacute;l&eacute;ments &agrave; ordonner</span></div><div class="ddBasketEnd"></div></div></div><table class="olTableSol"><tr><td class="olTdSolHead">Votre r&eacute;ponse :</td><td><div id="ITXj9uut0QfQo69ZddMI2h_Asol_R" class="ddRepArea "><div id="ITXj9uut0QfQo69ZddMI2h_Asol_S_N7e" class="ddDropCatch "><div id="ITXj9uut0QfQo69ZddMI2h_Asol_S_N80" class="ddDropCont "></div><div id="ITXj9uut0QfQo69ZddMI2h_Asol_S_N82" class="ddDropContIfEmpty "><span>D&eacute;posez ici</span></div><div class="ddCatchDragEnd"></div></div></div></td></tr><tr><td class="olTdSolHead">Solution :</td><td><div id="ITXj9uut0QfQo69ZddMI2h_Asol_S_N95" class="ddRepArea "><div class="ddDropCatch"><div class="ddBasketCont"><div class="ddLabelSol"><p>les Sympt&ocirc;mes</p></div><div class="ddLabelSol"><p>de Covid-19</p></div><div class="ddLabelSol"><p>les plus fr&eacute;quents</p></div><div class="ddLabelSol"><p>fi&egrave;vre toux</p></div><div class="ddLabelSol"><p>et s&egrave;che fatigue</p></div></div><div class="ddCatchDragEnd"></div></div></div></td></tr></table></div></div></div></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden"><span class="evalCounter"><span class="seen">10</span><span class="over">/</span><span class="total">10</span></span><nav class="pageTurner" role="navigation"><ul><li><a rel="prev" href="qcm%209_1.html" target="_self" class="btnNav prevEval" title="Pr&eacute;c&eacute;dent (Solution d'exercice)"><span>Pr&eacute;c&eacute;dent</span></a></li><li><a rel="next" href="module_Covid_18.html" target="_self" class="btnNav nextEval" title="Suivant (Fin du test)"><span>Suivant</span></a></li></ul></nav></div></div></main></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">tplMgr.init();scCodeMgr.init();scMediaMgr.init("ide:content/chi:div/chi:section/des:.mediaPlayer",{processYoutubeUrls :true});scImgMgr.init();</script>
+ </body>
+</html>

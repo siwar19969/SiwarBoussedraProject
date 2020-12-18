@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+  <title>Solution d'exercice</title>
+  <meta charset="UTF-8">
+  <meta name="generator" content="SCENARI 4.2.106 / Opale 3.7.000">
+  <meta name="revision" content="2020-12-17 23:32">
+  <link rel="start" href="module_Covid.html" title="Cours Covid-19">
+  <meta name="author" content>
+  <meta name="date" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scImgMgr/scImgMgr.css">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {id:"kithaaw1"};
+/*1*/ window.scLoadParams = {destUri:"/co/qcm12_1.html", pathToRoot:"../"};
+</script>
+  <script type="text/JavaScript" src="../lib-sc/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_assmnt.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_mathjax/mathjaxMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scMediaMgr/scMediaMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scImgMgr/scImgMgr.js"></script>
+  <script type="text/JavaScript">
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImgMgr.registerAdaptedImage("ide:content/des:img");
+
+scImgMgr.registerGallery("des:div.galFra");
+
+scImgMgr.registerSvg("des:svg");
+scImgMgr.registerZoom("des:a.svgZoom",{type:"svg",svgMax:1,toolbar:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+  <script type="text/javascript">try{
+	if(window.frameElement.setSubWindowTitle) window.frameElement.setSubWindowTitle(document.title);
+}catch(e){}
+</script>
+ </head>
+ <body class="subWin eval">
+  <div id="root"><header id="header" role="banner"><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden"><section class="hBk article result"><div class="hBk_co "><script type="text/JavaScript">
+var VG3J1Lv6kuiZn7Vf932hf_Asol = {
+
+	fId : "VG3J1Lv6kuiZn7Vf932hf",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "init" : {
+
+	this.refreshResult = function(pDisplay){
+		if(pDisplay) this.fResultDisplay = pDisplay;
+		if(this.fResultDisplay == "none") for(var i=this.fLabels.length -1; i >=0; i--)  scDragMgr.helpers.delClass(this.fLabels[i],"ddLabel_Right","ddLabel_Wrong");
+		else for(var i=this.fLabels.length -1; i >=0; i--) {
+			var vLabel = this.fLabels[i];
+
+			var vOldClass = (vLabel.sG == vLabel.rG ) ? "ddLabel_Wrong" : "ddLabel_Right";
+			var vNewClass = (vLabel.sG == vLabel.rG ) ? "ddLabel_Right" : "ddLabel_Wrong";
+
+			scDragMgr.helpers.switchClass(vLabel, vOldClass, vNewClass);
+		}
+	};
+var vLoadRespSession = "eval";
+
+		for(var i = this.fLabels.length - 1; i >=0; i--) scDragMgr.setDraggable(this.fLabels[i], false);
+		this.load(vLoadRespSession);
+		this.synch();
+	this.fResultDisplay = "addClass";
+
+var vLoadScoreSession = "eval";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+this.fRespSession = null;
+
+		this.computeScore = function() {
+
+		this.refreshScoresFeedbacks();
+		this.refreshResult();
+	}
+
+
+		this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.VG3J1Lv6kuiZn7Vf932hf_Asol_form;
+		switch(this.fCurSeq) {
+case "init" : {
+		this.refreshResult("none");
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "init";
+	},
+
+	saveResp:function(pSession){
+		if(pSession==null) return;
+		var vLabel = this.fLabels[0];
+		var vStr = "[{g:" + vLabel.rG + ",offs:" + vLabel.rO + "," + scDragMgr.saveLabelPos(vLabel) + "}";
+		for(var i=1, len=this.fLabels.length; i < len; i++) {
+			vLabel = this.fLabels[i];
+			vStr += ",{g:" + vLabel.rG + ",offs:" + vLabel.rO + "," + scDragMgr.saveLabelPos(vLabel) + "}";
+		}
+		vStr+="]";
+		scServices.assmntMgr.setResponse(this.fId, pSession, "pos", vStr);
+	},
+	load:function(pSession){
+		var vStr = (pSession!=null) ? scServices.assmntMgr.getResponse(this.fId, pSession, "pos") : null;
+		for(var i=this.fGroupsC.length -1; i >=0; i--) {
+			var vGroup = this.fGroupsC[i];
+			for(var j=vGroup.length-1; j >=0; j--) vGroup[j].labelsToAdd = [];
+		}
+		if(vStr) {
+						var vList = eval(vStr);
+			for(var i=0, len=this.fLabels.length; i < len; i++) {
+				var vLabelToAdd = vList[i];
+				vLabelToAdd.label = this.fLabels[i];
+				var vGroupC = this.fGroupsC[vLabelToAdd.g];
+				if(vGroupC.length == 1) vGroupC[0].labelsToAdd[vLabelToAdd.offs] = vLabelToAdd; 
+				else vGroupC[vLabelToAdd.offs].labelsToAdd.push(vLabelToAdd);
+			}
+		} else {
+						var vBasketC = this.fGroupsC[0];
+
+			for(var i=vBasketC.length-1; i >=0; i--) for(var j=0, vLen=vBasketC[i]._Labels.length; j < vLen; j++) vBasketC[i].labelsToAdd.push({label:vBasketC[i]._Labels[j]});
+
+		}
+		scDragMgr.repopulateContainers("VG3J1Lv6kuiZn7Vf932hf_Asol");
+	},
+	synch:function(){
+		for(var i=this.fGroupsC.length -1; i >=0; i--) {
+			var vGroup = this.fGroupsC[i];
+			var vOffset = 0;
+			for(var j=0, vLenJ=vGroup.length; j < vLenJ; j++) {
+				var vItems = scDragMgr.getLabels(vGroup[j]);
+				var vLenK = vItems.length;
+								if(vLenK == 0) vOffset++;
+				else for(var k=0; k < vLenK; k++) {
+					vItems[k].rG = i;
+					vItems[k].rO = vOffset++;
+				}
+			}
+		}
+	},
+	refreshScoresFeedbacks : function(){
+
+		var vScoreNode = sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_SN44");
+
+		var vScore = (Math.round((this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * 100) * 1)+ 0;
+if(vScore > 99 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Bonne réponse<\/span>";
+			vScoreNode.className = "answBest";
+		} else if(vScore > 49 && vScore <= 99 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answGood";
+		} else if(vScore > 0 && vScore <= 49 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answBad";
+		} else if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Mauvaise réponse <\/span>";
+			vScoreNode.className = "answWorst";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	onLoad: function(){
+	try{
+		var onChange = function() {
+VG3J1Lv6kuiZn7Vf932hf_Asol.synch();
+VG3J1Lv6kuiZn7Vf932hf_Asol.computeScore();
+VG3J1Lv6kuiZn7Vf932hf_Asol.saveResp(VG3J1Lv6kuiZn7Vf932hf_Asol.fRespSession);
+			scServices.assmntMgr.commit();
+		}
+		this.fLabels = [];
+		var vLabel, vC;
+scDragMgr.makeContainer("VG3J1Lv6kuiZn7Vf932hf_Asol", sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_S_N6f"), vC = sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_S_N71"), sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_S_N7c")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddBasketDragOver');
+vLabel = sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_LN1a");
+	this.fLabels.push(vLabel);
+	vLabel.sO=0;
+vLabel.sG=1;
+scDragMgr.makeDraggableLabel("VG3J1Lv6kuiZn7Vf932hf_Asol", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_LN3b");
+	this.fLabels.push(vLabel);
+	vLabel.sO=0;
+vLabel.sG=2;
+scDragMgr.makeDraggableLabel("VG3J1Lv6kuiZn7Vf932hf_Asol", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_LN5c");
+	this.fLabels.push(vLabel);
+	vLabel.sO=0;
+vLabel.sG=3;
+scDragMgr.makeDraggableLabel("VG3J1Lv6kuiZn7Vf932hf_Asol", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_LN7d");
+	this.fLabels.push(vLabel);
+	vLabel.sO=0;
+vLabel.sG=4;
+scDragMgr.makeDraggableLabel("VG3J1Lv6kuiZn7Vf932hf_Asol", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_LN8c");
+	this.fLabels.push(vLabel);
+	vLabel.sO=1;
+vLabel.sG=4;
+scDragMgr.makeDraggableLabel("VG3J1Lv6kuiZn7Vf932hf_Asol", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_LN9b");
+	this.fLabels.push(vLabel);
+	vLabel.sO=2;
+vLabel.sG=4;
+scDragMgr.makeDraggableLabel("VG3J1Lv6kuiZn7Vf932hf_Asol", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+vLabel = sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_LNbc");
+	this.fLabels.push(vLabel);
+	vLabel.sO=0;
+vLabel.sG=5;
+scDragMgr.makeDraggableLabel("VG3J1Lv6kuiZn7Vf932hf_Asol", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, '');
+scDragMgr.makeContainer("VG3J1Lv6kuiZn7Vf932hf_Asol", sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_NN8d_N9"), vC = sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_NN94_N9"), sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_NN96_N9")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddCatchDragOver');
+scDragMgr.makeContainer("VG3J1Lv6kuiZn7Vf932hf_Asol", sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_NN8d_N2a"), vC = sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_NN94_N2a"), sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_NN96_N2a")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddCatchDragOver');
+scDragMgr.makeContainer("VG3J1Lv6kuiZn7Vf932hf_Asol", sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_NN8d_N4b"), vC = sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_NN94_N4b"), sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_NN96_N4b")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddCatchDragOver');
+scDragMgr.makeContainer("VG3J1Lv6kuiZn7Vf932hf_Asol", sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_NN8d_N6c"), vC = sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_NN94_N6c"), sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_NN96_N6c")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddCatchDragOver');
+scDragMgr.makeContainer("VG3J1Lv6kuiZn7Vf932hf_Asol", sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_NN8d_Nab"), vC = sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_NN94_Nab"), sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_NN96_Nab")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddCatchDragOver');
+scDragMgr.makeContainer("VG3J1Lv6kuiZn7Vf932hf_Asol", sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_NN8d_Ncc"), vC = sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_NN94_Ncc"), sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_NN96_Ncc")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddCatchDragOver');
+this.fGroupsC = [scDragMgr.getContainers("VG3J1Lv6kuiZn7Vf932hf_Asol", sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_L")),scDragMgr.getContainers("VG3J1Lv6kuiZn7Vf932hf_Asol", sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_RN9")),scDragMgr.getContainers("VG3J1Lv6kuiZn7Vf932hf_Asol", sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_RN2a")),scDragMgr.getContainers("VG3J1Lv6kuiZn7Vf932hf_Asol", sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_RN4b")),scDragMgr.getContainers("VG3J1Lv6kuiZn7Vf932hf_Asol", sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_RN6c")),scDragMgr.getContainers("VG3J1Lv6kuiZn7Vf932hf_Asol", sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_RNab")),scDragMgr.getContainers("VG3J1Lv6kuiZn7Vf932hf_Asol", sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_RNcc"))];
+		for(var i = this.fGroupsC[0].length-1; i >=0; i--) this.fGroupsC[0][i]._Labels = scDragMgr.getLabels(this.fGroupsC[0][i]);
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("VG3J1Lv6kuiZn7Vf932hf_Asol_A");
+		vNodeRoot.style.display = "block"; 
+	}catch(e){console.log(e);}
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = VG3J1Lv6kuiZn7Vf932hf_Asol;
+scOnUnloads[scOnUnloads.length] = VG3J1Lv6kuiZn7Vf932hf_Asol;
+</script><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_A" style="display:none;"><div class="solBody"><div class="score"><h3 class="score_ti"><span>R&eacute;sultat</span></h3><div class="scoreEval " aria-live="polite"><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_SN44"><span></span></div></div></div><div class="sol"><h3 class="sol_ti"><span>Correction</span></h3><table class="mtTable"><tr><td class="mtTdBasketSol"></td><td class="mtTdHeading">Votre r&eacute;ponse</td><td class="mtTdHeading">Solution</td></tr><tr><td class="mtTdBasketSol"><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_L" class="ddBasket "><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_S_N6f" class="ddBasketCatch "><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_S_N71" class="ddBasketCont "><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_LN9b" class="mtLabel "><p>d&eacute;pister en voiture</p></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_LN5c" class="mtLabel "><p>des installations communautaires</p></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_LN3b" class="mtLabel "><p>le d&eacute;pistage</p></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_LN1a" class="mtLabel "><p>d&eacute;tecter les cas et les groupes de cas) dans la communaut&eacute;.</p></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_LN8c" class="mtLabel "><p>pour se faire&nbsp;</p></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_LN7d" class="mtLabel "><p>des sites de drive-in</p></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_LNbc" class="mtLabel "><p>des sites fixes</p></div></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_S_N7c" class="ddBasketIfEmpty "><span>Plus d'&eacute;l&eacute;ments &agrave; cat&eacute;goriser</span></div><div class="ddBasketEnd"></div></div></div></td><td class="mtTdSol"><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_RN9" class="ddRepArea "><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_NN8d_N9" class="ddDropCatch "><div class="ddDropTi"><p>La surveillance en milieu de soins primaires est une n&eacute;cessit&eacute; pour pouvoir</p></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_NN94_N9" class="ddDropCont "></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_NN96_N9" class="ddDropContIfEmpty "><span>D&eacute;posez ici</span></div><div class="ddCatchDragEnd"></div></div></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_RN2a" class="ddRepArea "><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_NN8d_N2a" class="ddDropCatch "><div class="ddDropTi"><p>Dans la mesure du possible,</p></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_NN94_N2a" class="ddDropCont "></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_NN96_N2a" class="ddDropContIfEmpty "><span>D&eacute;posez ici</span></div><div class="ddCatchDragEnd"></div></div></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_RN4b" class="ddRepArea "><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_NN8d_N4b" class="ddDropCatch "><div class="ddDropTi"><p>devrait &ecirc;tre disponible dans les services de soins primaires. Une autre possibilit&eacute; compl&eacute;mentaire consiste &agrave; mettre en place</p></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_NN94_N4b" class="ddDropCont "></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_NN96_N4b" class="ddDropContIfEmpty "><span>D&eacute;posez ici</span></div><div class="ddCatchDragEnd"></div></div></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_RN6c" class="ddRepArea "><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_NN8d_N6c" class="ddDropCatch "><div class="ddDropTi"><p>consacr&eacute;es au d&eacute;pistage de la COVID-19, telles que</p></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_NN94_N6c" class="ddDropCont "></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_NN96_N6c" class="ddDropContIfEmpty "><span>D&eacute;posez ici</span></div><div class="ddCatchDragEnd"></div></div></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_RNab" class="ddRepArea "><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_NN8d_Nab" class="ddDropCatch "><div class="ddDropTi"><p>ou</p></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_NN94_Nab" class="ddDropCont "></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_NN96_Nab" class="ddDropContIfEmpty "><span>D&eacute;posez ici</span></div><div class="ddCatchDragEnd"></div></div></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_RNcc" class="ddRepArea "><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_NN8d_Ncc" class="ddDropCatch "><div class="ddDropTi"><p>dans des b&acirc;timents communautaires.</p></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_NN94_Ncc" class="ddDropCont "></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_NN96_Ncc" class="ddDropContIfEmpty "><span>D&eacute;posez ici</span></div><div class="ddCatchDragEnd"></div></div></div></td><td class="mtTdSol"><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_NNa6_N9" class="ddRepArea "><div class="ddDropCatch"><div class="ddDropTi"><p>La surveillance en milieu de soins primaires est une n&eacute;cessit&eacute; pour pouvoir</p></div><div class="ddDropCont"><div class="mtLabelSol"><p>d&eacute;tecter les cas et les groupes de cas) dans la communaut&eacute;.</p></div></div><div class="ddCatchDragEnd"></div></div></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_NNa6_N2a" class="ddRepArea "><div class="ddDropCatch"><div class="ddDropTi"><p>Dans la mesure du possible,</p></div><div class="ddDropCont"><div class="mtLabelSol"><p>le d&eacute;pistage</p></div></div><div class="ddCatchDragEnd"></div></div></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_NNa6_N4b" class="ddRepArea "><div class="ddDropCatch"><div class="ddDropTi"><p>devrait &ecirc;tre disponible dans les services de soins primaires. Une autre possibilit&eacute; compl&eacute;mentaire consiste &agrave; mettre en place</p></div><div class="ddDropCont"><div class="mtLabelSol"><p>des installations communautaires</p></div></div><div class="ddCatchDragEnd"></div></div></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_NNa6_N6c" class="ddRepArea "><div class="ddDropCatch"><div class="ddDropTi"><p>consacr&eacute;es au d&eacute;pistage de la COVID-19, telles que</p></div><div class="ddDropCont"><div class="mtLabelSol"><p>des sites de drive-in</p></div><div class="mtLabelSol"><p>pour se faire&nbsp;</p></div><div class="mtLabelSol"><p>d&eacute;pister en voiture</p></div></div><div class="ddCatchDragEnd"></div></div></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_NNa6_Nab" class="ddRepArea "><div class="ddDropCatch"><div class="ddDropTi"><p>ou</p></div><div class="ddDropCont"><div class="mtLabelSol"><p>des sites fixes</p></div></div><div class="ddCatchDragEnd"></div></div></div><div id="VG3J1Lv6kuiZn7Vf932hf_Asol_NNa6_Ncc" class="ddRepArea "><div class="ddDropCatch"><div class="ddDropTi"><p>dans des b&acirc;timents communautaires.</p></div><div class="ddDropCont"></div><div class="ddCatchDragEnd"></div></div></div></td></tr></table></div></div></div></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden"><span class="evalCounter"><span class="seen">2</span><span class="over">/</span><span class="total">10</span></span><nav class="pageTurner" role="navigation"><ul><li><a rel="prev" href="qcm11_1.html" target="_self" class="btnNav prevEval" title="Pr&eacute;c&eacute;dent (Solution d'exercice)"><span>Pr&eacute;c&eacute;dent</span></a></li><li><a rel="next" href="qcm13_1.html" target="_self" class="btnNav nextEval" title="Suivant (Solution d'exercice)"><span>Suivant</span></a></li></ul></nav></div></div></main></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">tplMgr.init();scCodeMgr.init();scMediaMgr.init("ide:content/chi:div/chi:section/des:.mediaPlayer",{processYoutubeUrls :true});scImgMgr.init();</script>
+ </body>
+</html>
